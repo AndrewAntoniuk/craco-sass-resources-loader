@@ -1,8 +1,11 @@
 {
-  "name": "craco-sass-loader",
-  "version": "1.2.0",
+  "name": "@personal_it_jesus/craco-sass-loader",
+  "version": "1.0.0",
   "description": "A craco plugin to use sass-resources-loader with create-react-app",
-  "repository": "github:AndrewAntoniuk/craco-sass-resources-loader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewAntoniuk/craco-sass-resources-loader.git"
+  },
   "main": "index.js",
   "author": "Julien Tilap LA VINH, Scott Fischer, Andrii Antoniuk",
   "license": "MIT",
@@ -37,5 +40,12 @@
       "eslint --quiet --fix",
       "git add"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/AndrewAntoniuk/craco-sass-resources-loader/issues"
+  },
+  "homepage": "https://github.com/AndrewAntoniuk/craco-sass-resources-loader#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
