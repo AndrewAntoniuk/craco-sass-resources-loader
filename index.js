@@ -2,16 +2,16 @@ module.exports = {
   overrideWebpackConfig: ({ webpackConfig, pluginOptions }) => {
     // Check webpack config
     if (
-      !webpackConfig || 
-      !webpackConfig.module || 
+      !webpackConfig ||
+      !webpackConfig.module ||
       !webpackConfig.module.rules ||
       typeof webpackConfig.module.rules !== 'object'
     ) {
-      throw new Error('craco-sass-resources-loader error: no valid webpackConfig.module.rules');
+      throw new Error('craco-sass-loader error: no valid webpackConfig.module.rules');
     }
 
     // Add the loader rule where needed
-    const output = {...webpackConfig};
+    const output = { ...webpackConfig };
     Object.keys(output.module.rules).forEach((ruleKey, ruleIndex) => {
       const rule = output.module.rules[ruleKey];
       if (Object.prototype.hasOwnProperty.call(rule, 'oneOf')) {
