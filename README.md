@@ -7,20 +7,20 @@ This is a [craco](https://github.com/sharegate/craco) plugin to add [sass-resour
 ## Installation
 
 ```bash
-$ yarn add -D craco-sass-resources-loader
+$ yarn add -D craco-sass-loader
 
 # OR
 
-$ npm install craco-sass-resources-loader --save-dev
+$ npm install craco-sass-loader --save-dev
 ```
 
 ## Usage
 
-`craco-sass-resources-loader` expect a `resources` option containing a string or an array of
+`craco-sass-loader` expect a `resources` option containing a string or an array of
 string pointing the scss files your want to load before any scss/sass file.
 
 ```js
-const sassResourcesLoader = require('craco-sass-resources-loader');
+const sassResourcesLoader = require('craco-sass-loader');
 
 module.exports = {
   plugins: [
