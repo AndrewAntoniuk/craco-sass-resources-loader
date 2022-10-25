@@ -37,7 +37,7 @@ module.exports = {
 You can load multiple scss resources files too:
 
 ```js
-const sassResourcesLoader = require('craco-sass-resources-loader');
+const sassResourcesLoader = require('craco-sass-loader');
 
 module.exports = {
   plugins: [
